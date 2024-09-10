@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUP Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="container">
+        <section id="hero">
+            <div class="logo"><img src="resources/odin-lined-logo.png" alt="odin-lined-logo">odin</div>
+            <p class="pic-source">Photo by <a href="https://unsplash.com/photos/forest-mini-bridge-AVzByhROPbs" target="_blank" noopener noreferrer>Tyler Lastovich</a> On <a href="https://unsplash.com/" target="_blank" noopener noreferrer>Unsplash</a></p>
+        </section>
+        <section id="form-container">
+            <div class="intro">
+                This is not a real online Service! You know you need something like this in your life to help you achieve your deepest dreams.
+            </div>
+            <p class="sub-intro">You <i>know</i> you want to.</p>
+            <form action="" method="post">
+                <div class="form-header">Let's do this!</div>
+                <label for="fname">first name</label>
+                <input type="text" name="fname" id="fname" required>
+
+                <label for="lname">last name</label>
+                <input type="text" name="lname" id="lname" required>
+
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="phone">phone number</label>
+                <input type="tel" name="phone" id="phone" required>
+
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" required>
+
+                <label for="reppass">confirm password</label>
+                <input type="password" name="reppass" id="reppass" required>
+
+                <button type="submit">Create Account</button>
+            </form>
+            <p class="last-paragragh">Have an Account? <a href="#">Log in</a></p>
+        </section>
+    </main>
+    <script src="form.js"></script>
+</body>
+</html>
