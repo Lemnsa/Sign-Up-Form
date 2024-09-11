@@ -4,9 +4,11 @@
     :root {
         /* background colors */
         --white: #fafafa;
-        --bluish-white: #dadbe7;
+        --bluish-white: #e9eaf1;
         --btn-bg: #596D48;
         --border-color: #E5E7EB;
+
+        --padding: 3rem;
     }
 
     /* css resets */
@@ -14,6 +16,7 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        border: none;
     }
 
     body {
@@ -76,8 +79,62 @@
 
     #form-container {
         width: 60vw;
+        background-color: var(--bluish-white);
         display: flex;
         flex-direction: column;
-
+        gap: 2rem;
+        justify-content: center;
     }
 
+    #form-container .intro {
+        width: 62ch;
+    }
+
+    #form-container .intro, #form-container .sub-intro, form .form-header {
+        font-weight: 700;
+        padding-left: var(--padding);
+    }
+
+    form {
+        width: 100%;
+        background-color: var(--white);
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        font-family: "Titillium Web", system-ui;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: var(--padding);
+        box-shadow:4px 4px 8px darkgray;
+    }
+
+    .form-header, button { position: absolute; }
+
+    .form-header { top: 10px; font-family: sans-serif; }
+
+    button {bottom: -60px; padding: 8px 40px; border: none; background-color: var(--btn-bg); border-radius: 4px; color: var(--white); font-weight: 600; cursor: pointer;}
+
+    form p { width: 300px; margin: 10px 0; }
+
+    form input { height: 30px; width: 250px; border-radius: 4px; padding-left: 5px; border: 1px solid var(--border-color); outline: none;}
+
+    form label { text-transform: uppercase; font-size: 10px; font-weight: 500; letter-spacing: 2px;}
+
+    form input:focus, form input:active { border:1px solid blue; box-shadow: 2px 4px 4px lightgray;}
+
+    .invalid { border: 1px solid red;}
+
+    .last-paragragh {
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 60px;
+        padding-left: var(--padding);
+    }
+
+    .last-paragragh a {
+        text-decoration: none;
+        color: var(--btn-bg);
+        font-weight: bold;
+    }
